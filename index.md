@@ -1,17 +1,15 @@
-```js
+```
+{% raw %}
 <script>
 window.MathJax = {
   tex: {
     inlineMath: [
-      ['$', '$'],          // standard
-      ['\\(', '\\)'],      // LaTeX inline
-      ['\\[', '\\]'],      // sometimes misused inline
-      ['\\{', '\\}'],      // rare but seen
-      ['`$', '$`']         // defensive: malformed markdown
+      ['$', '$'],
+      ['\\(', '\\)']
     ],
     displayMath: [
-      ['$$', '$$'],        // standard display
-      ['\\[', '\\]'],      // LaTeX display
+      ['$$', '$$'],
+      ['\\[', '\\]'],
       ['\\begin{equation}', '\\end{equation}'],
       ['\\begin{align}', '\\end{align}'],
       ['\\begin{aligned}', '\\end{aligned}'],
@@ -25,16 +23,12 @@ window.MathJax = {
     processEnvironments: true
   },
   options: {
-    skipHtmlTags: [
-      'script',
-      'noscript',
-      'style',
-      'textarea',
-      'pre',
-      'code'
-    ]
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
   }
 };
 </script>
-
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+{% endraw %}
 ```
