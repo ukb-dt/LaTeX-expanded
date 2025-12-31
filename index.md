@@ -1,4 +1,4 @@
-```
+```js
 {% raw %}
 <script>
 window.MathJax = {
